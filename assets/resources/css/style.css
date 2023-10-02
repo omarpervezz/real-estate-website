@@ -1,0 +1,158 @@
+/* Import an external CSS file for fonts from a font path */
+@import url(../../vendors/css/font.css);
+
+
+/* Reset CSS */
+/* Box sizing border-box for all elements */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Define custom CSS variables within :root */
+:root {
+  --shadow-overlay: #0000000F; /* shadow with transparency */
+  --white-color:#FFFFFF; /* white color */
+  --black-color:#000000; /* black color */
+  --hover-background: #80C8BC66; /* semi-transparent for hover effect */
+  --cta-button-background: #80C8BC; /* CTA button background */
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+	list-style: none;
+}
+/* Remove the headings default margin and padding */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+/* Remove default margin and padding on body */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove underline from anchor links */
+a {
+	text-decoration: none;
+}
+
+/* Remove default outline styles for focusable elements */
+:focus {
+	outline: none;
+}
+
+html {
+	font-size: 62%;
+}
+
+/* Set default font family and color */
+body {
+   line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+	font-size: 1.6rem;
+	font-family: 'Inter', Helvetica, sans-serif;
+	color: var(--white-color);
+ 
+}
+
+/* Reset form elements to remove default styles */
+input,
+textarea,
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+/*-- // Common CSS --*/
+
+.common-action-button{
+  border: none;
+	outline: none;
+	margin-left: 3.3rem;
+	background-color: var(--cta-button-background);
+	color: var(--white-color);
+	width: 14.4rem;
+	height: 4.8rem;
+	padding: 1rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.6rem;
+	letter-spacing: 0em;
+	text-align: center;
+	border-radius: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-- // Common CSS --*/
+
+
+/*-- // Header CSS --*/
+
+
+.header {
+	width: 100%;
+	height: 10.652rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	background-color: var(--white-color);
+	box-shadow: 0px 4px 8px 0px var(--shadow-overlay);
+}
+
+nav .logo-img img {
+	width: 15.4rem;
+	height: auto;
+
+}
+
+nav .menu-bar {
+	display: inline-flex;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding: 0;
+}
+
+nav .menu-bar li {
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	margin: 0 1rem;
+	border-radius: .5rem;
+  transition: background-color .2s linear;
+}
+
+nav .menu-bar li:hover {
+	background-color: var(--hover-background);
+}
+
+nav .menu-bar li:first-child {
+	margin-left: 0;
+}
+
+nav .menu-bar li a:link,
+nav .menu-bar li a:visited {
+	font-family: 'League_Spartan';
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--black-color);
+	line-height: 1.6rem;
+  user-select: none;
+ -webkit-user-select: none; /* Chrome, Safari, and newer versions of Edge */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge before version 79 */
+}
+
+nav .add_listing img {
+	width: 3rem;
+	height: 3rem;
+
+}
+
+/*-- // Header CSS --*/

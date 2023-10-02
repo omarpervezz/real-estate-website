@@ -1,0 +1,32 @@
+/* Define the @font-face rule for the 'Inter' font */
+
+@font-face {
+    /* Specify the font-family name that you'll use in CSS */
+    font-family: 'Inter';
+  
+    /* Specify the font's weight (normal) */
+    font-weight: normal;
+  
+    /* Specify the font's style (normal) */
+    font-style: normal;
+  
+    /* Provide the path to the font file and its format (TrueType) */
+    src: url('./font/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  }
+  
+  /* Define the @font-face rule for the 'League_Spartan' font */
+  
+  @font-face {
+    /* Specify the font-family name that you'll use in CSS */
+    font-family: 'League_Spartan';
+  
+    /* Specify the font's weight (normal) */
+    font-weight: normal;
+  
+    /* Specify the font's style (normal) */
+    font-style: normal;
+  
+    /* Provide the path to the font file and its format (TrueType) */
+    src: url('./font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  }
+  
